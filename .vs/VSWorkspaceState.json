@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Architecture",
+    "\\css",
+    "\\Landscapes"
   ],
-  "SelectedNode": "\\Puffy.html",
+  "SelectedNode": "\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
