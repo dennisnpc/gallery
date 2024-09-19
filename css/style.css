@@ -6,6 +6,16 @@ html, body {
 button {
     border: none;
     background: none;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -34,6 +44,13 @@ body > header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+/* For phones */
+@media only screen and (max-width: 768px) {
+    body > header {
+        height: 3vh;
+    }
 }
 
 #logo {
@@ -67,6 +84,10 @@ body nav ul {
     padding: 0;
 }
 
+body > nav > ul > li {
+    padding: 1vh;
+}
+
 #best {
     display: flex;
     justify-content: center;
@@ -89,6 +110,36 @@ body nav ul {
     max-width: 58%;
 }
 
+dialog[open] {
+    width: 80vw;
+    min-height: 40vh;
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+    border: none;
+    overflow: hidden;
+    background-image: url(../img/bg/bg2.png);
+}
+
+dialog > button > img {
+    max-width: 50%;
+}
+
+dialog > img {
+    max-width: 58%;
+    object-fit: contain;
+    max-height: 100%;
+}
+
+#closeModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 6vw;
+    padding: 0px 2vw 0px 0px;
+}
+
 #gallery {
     width: 60vw;
     display: flex;
@@ -96,12 +147,19 @@ body nav ul {
     justify-content: center;
 }
 
-#gallery img {
+#gallery img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+#gallery button {
     flex: 1 1 30%;
     width: 30%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     margin: 1vw;
+    padding: 0px;
 }
 
 body > footer {

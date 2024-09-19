@@ -28,23 +28,33 @@
 
     <main>
         <section id="best">
-            <button id="back"><img src="../img/icons/left_arrow.png" alt="left arrow" /></button>
+            <button id="bestBack"><img src="../img/icons/left_arrow.png" alt="left arrow" /></button>
 
-            <img src="../img/Landscapes/2.jpeg" id="best-img" />
+            <img src="../img/Landscapes/1.jpeg" id="best-img" />
 
-            <button id="forward"><img src="../img/icons/right_arrow.png" alt="right arrow" /></button>
+            <button id="bestForward"><img src="../img/icons/right_arrow.png" alt="right arrow" /></button>
         </section>
 
+        <dialog id="modal">
+            <button id="galleryBack"><img src="../img/icons/left_arrow.png" alt="left arrow" /></button>
+
+            <img id="modalImg" src="../img/Landscapes/4.jpeg" />
+
+            <button id="galleryForward"><img src="../img/icons/right_arrow.png" alt="right arrow" /></button>
+
+            <button id="closeModal">&times;</button>
+        </dialog>
+
         <section id="gallery">
-            <img src="../img/Landscapes/4.jpeg" />
-            <img src="../img/Landscapes/5.jpeg" />
-            <img src="../img/Landscapes/6.jpeg" />
-            <img src="../img/Landscapes/7.jpeg" />
-            <img src="../img/Landscapes/8.jpeg" />
-            <img src="../img/Landscapes/9.jpeg" />
-            <img src="../img/Landscapes/10.jpeg" />
-            <img src="../img/Landscapes/11.jpeg" />
-            <img src="../img/Landscapes/12.jpeg" />
+            <button data-action="open-modal" data-image-number="4"><img src="../img/Landscapes/4.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="5"><img src="../img/Landscapes/5.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="6"><img src="../img/Landscapes/6.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="7"><img src="../img/Landscapes/7.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="8"><img src="../img/Landscapes/8.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="9"><img src="../img/Landscapes/9.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="10"><img src="../img/Landscapes/10.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="11"><img src="../img/Landscapes/11.jpeg" /></button>
+            <button data-action="open-modal" data-image-number="12"><img src="../img/Landscapes/12.jpeg" /></button>
         </section>
     </main>
 
